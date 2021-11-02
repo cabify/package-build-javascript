@@ -1,6 +1,6 @@
 {
   "name": "@cabify/package-build",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common configuration & scripts for building TS packages with rollup",
   "license": "Apache-2.0",
   "main": "build.js",
