@@ -2812,9 +2812,9 @@ node-releases@^2.0.1:
   integrity sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==
 
 node-typescript-compiler@^2.2.1:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/node-typescript-compiler/-/node-typescript-compiler-2.3.0.tgz#8e283ab114e2f901ca8e124460fe5b5e915e2914"
-  integrity sha512-MeyHx2cQtrJKFxxaPnrMs01fvJDMpuxEODOHVBw7/9LKVQMaiciZCW3gShdLuwuLuU/ZSgpqZrJKUbqQ5OKVFA==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/node-typescript-compiler/-/node-typescript-compiler-2.4.0.tgz#c4d80399461710f2418e3e18438c2e06e3205c65"
+  integrity sha512-jip0PzT4usVyJsojTGAJrCHkqCUQdmFjMl5rXyScP51FjQwmsdX9qb6o8+wXIA7s2kUzt696zpCifG4fFC+GUg==
   dependencies:
     lodash "^4"
     path-exists "^4"
