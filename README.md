@@ -19,6 +19,17 @@ Install this package as a dev dependency in your package, then create scripts in
 
 NOTICE: this package doesn't clean your build directories in each run, so you'd probably want to append something like `rimraf` to your dependencies.
 
+### Publish a new version
+
+- Update [CHANGELOG](./CHANGELOG.md) with new features, breaking changes, etc
+- Check you're in `main` branch and everything is up-to-date.
+- Run `yarn publish:<major|minor|patch>` or `yarn publish:canary` for canary versions.
+- Run `git push && git push --tags`
+- Check all test actions triggered after previous push are ✔️.
+- Go to [create a new release](https://github.com/cabify/package-build-javascript/releases/new), select previously pushed tag and write a Title.
+- Check the action for publish the npm has finished with success.
+- [Check on npm package webpage](https://www.npmjs.com/package/@cabify/package-build), the version has been published successfully under `latest` tag.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
