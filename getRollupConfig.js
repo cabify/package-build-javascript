@@ -5,15 +5,13 @@ const { babel } = require('@rollup/plugin-babel');
 const image = require('@rollup/plugin-image');
 const ignoreImport = require('rollup-plugin-ignore-import');
 const path = require('path');
-const tsc = require('node-typescript-compiler');
 const json = require('@rollup/plugin-json');
 
-const compileTypings = (cwd) => () => {
-  return tsc.compile({
-    project: cwd,
-    emitDeclarationOnly: true,
+const typeDefinitions = (dirname) =>
+  command(`tsc --project ${dirname}/tsconfig.json --emitDeclarationOnly`, {
+    exitOnFail: true,
+    wait: true,
   });
-};
 
 module.exports = (dirname) => {
   const pkgPath = path.join(dirname, 'package.json');
@@ -40,7 +38,7 @@ module.exports = (dirname) => {
         return external.includes(namespace);
       },
       plugins: [
-        command(compileTypings(dirname), { exitOnFail: true, wait: true }),
+        typeDefinitions(dirname),
         resolve({ extensions }),
         commonjs(),
         babel({
