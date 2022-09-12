@@ -34,7 +34,7 @@
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-image": "^2.0.6",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "cross-spawn": "^7.0.3",
     "minimist": "^1.2.5",
     "node-typescript-compiler": "^3.0.0",
