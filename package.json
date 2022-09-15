@@ -47,7 +47,7 @@
     "@babel/eslint-parser": "7.18.9",
     "@cabify/babel-preset": "0.0.2",
     "@cabify/eslint-config": "1.0.3",
-    "all-contributors-cli": "6.20.0",
+    "all-contributors-cli": "6.20.4",
     "eslint": "8.23.1",
     "eslint-import-resolver-typescript": "3.5.0",
     "prettier": "2.7.1",
