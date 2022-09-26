@@ -1481,10 +1481,10 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-all-contributors-cli@6.20.4:
-  version "6.20.4"
-  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.20.4.tgz#de69d243206cb821f8c33ef0b57e9f511ceb7e25"
-  integrity sha512-oLOrCGh1LjR/EkaESbLe7faTX1tq8TP4pcR6CvkKED5O9E7Yahk5DiexR8roghluljwI20m2JX2I6UTYV7/tLg==
+all-contributors-cli@6.20.5:
+  version "6.20.5"
+  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.20.5.tgz#b1e03f20affe9752d26456cfe33ceca6d7192e5a"
+  integrity sha512-vWAR4+SyF9ZpkpbFoldCYbuAb8qkzjkj8uW4yJJN2fN48VRO+E7xGTnt+cLTQt5RNgj00MoYx/LJbWesjeSehQ==
   dependencies:
     "@babel/runtime" "^7.7.6"
     async "^3.1.0"
@@ -3335,9 +3335,9 @@ rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.41.4:
-  version "2.79.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.79.0.tgz#9177992c9f09eb58c5e56cbfa641607a12b57ce2"
-  integrity sha512-x4KsrCgwQ7ZJPcFA/SUu6QVcYlO7uRLfLAy0DSA4NS2eG8japdbpM50ToH7z4iObodRYOJ0soneF0iaQRJ6zhA==
+  version "2.79.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.79.1.tgz#bedee8faef7c9f93a2647ac0108748f497f081c7"
+  integrity sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==
   optionalDependencies:
     fsevents "~2.3.2"
 
