@@ -46,7 +46,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
     "@cabify/babel-preset": "0.0.2",
-    "@cabify/eslint-config": "1.0.3",
+    "@cabify/eslint-config": "1.1.1",
     "all-contributors-cli": "6.24.0",
     "eslint": "8.25.0",
     "eslint-import-resolver-typescript": "3.5.1",
