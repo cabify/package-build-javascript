@@ -1271,13 +1271,13 @@
     is-reference "1.2.1"
     magic-string "^0.26.4"
 
-"@rollup/plugin-image@^2.0.6":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-image/-/plugin-image-2.1.1.tgz#898d6b59ac0025d7971ef45640ab330cb0663b0c"
-  integrity sha512-AgP4U85zuQJdUopLUCM+hTf45RepgXeTb8EJsleExVy99dIoYpt3ZlDYJdKmAc2KLkNntCDg6BPJvgJU3uGF+g==
+"@rollup/plugin-image@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-image/-/plugin-image-3.0.0.tgz#d1876a9dabde66b434f3e42b3e6820852e904c2d"
+  integrity sha512-QyAWMoVu8kP7UfMv0CsiQq49+vZLyOIb65+9akDtDfx6oOEFw/3HSOIvOpF5WyPcdm1yW5Qpp+ERHBpxdoMi1A==
   dependencies:
-    "@rollup/pluginutils" "^3.1.0"
-    mini-svg-data-uri "^1.2.3"
+    "@rollup/pluginutils" "^4.2.1"
+    mini-svg-data-uri "^1.4.4"
 
 "@rollup/plugin-json@^4.1.0":
   version "4.1.0"
@@ -2892,10 +2892,10 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mini-svg-data-uri@^1.2.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz#43177b2e93766ba338931a3e2a84a3dfd3a222b8"
-  integrity sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==
+mini-svg-data-uri@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
+  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
 
 minimatch@^3.0.4, minimatch@^3.1.2:
   version "3.1.2"
