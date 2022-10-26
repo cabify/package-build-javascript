@@ -21,8 +21,8 @@ NOTICE: this package doesn't clean your build directories in each run, so you'd 
 
 #### Parameters
 
- - `-w` to watch the files.
- - `-p` to define a different `tsconfig.ts` file. p.eg: `package-build -p tsconfig.build.json`.
+- `-w` to watch the files.
+- `-p` to define a different `tsconfig.ts` file. p.eg: `package-build -p tsconfig.build.json`.
 
 ### Publish a new version
 

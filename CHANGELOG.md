@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
- ### Added
+### Added
 
-  - Allow define typescript project with `-p` parameter. This is useful to have a `tsconfig.json` in the root to allow IDE and library implementation to get a project file including files even if they won't be included in the NPM package (.spec, .test, .stories). Otherwise a project including this files will transform every file defined, even those not desired in the final bundle, not only forcing to exclude them explicitly but increasing compilation times and errors. DefaiBu default `tsconfig.json` will be used as it usually does.
+- Allow define typescript project with `-p` parameter. This is useful to have a `tsconfig.json` in the root to allow IDE and library implementation to get a project file including files even if they won't be included in the NPM package (.spec, .test, .stories). Otherwise a project including this files will transform every file defined, even those not desired in the final bundle, not only forcing to exclude them explicitly but increasing compilation times and errors. DefaiBu default `tsconfig.json` will be used as it usually does.
 
 ## [0.0.2] - 2021-11-02
 
