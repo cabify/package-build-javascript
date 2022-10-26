@@ -33,10 +33,10 @@ const watch = (config) => {
   watcher.on('event', (event) => eventHandler(event));
 };
 
-const build = async (withWatch = false) => {
+const build = async (withWatch = false, project) => {
   const dirname = process.cwd();
   console.log(`Bundling ${dirname}`);
-  const { input, output } = getRollupConfig(dirname);
+  const { input, output } = getRollupConfig(dirname, project);
 
   if (withWatch) {
     watch({ ...input, output });
@@ -60,4 +60,4 @@ const build = async (withWatch = false) => {
 
 const argv = minimist(process.argv.slice(2));
 
-build(argv.w);
+build(argv.w, argv.p);
