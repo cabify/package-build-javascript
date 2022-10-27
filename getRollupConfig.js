@@ -15,7 +15,7 @@ const compileTypings = (cwd) => () => {
   });
 };
 
-module.exports = (dirname) => {
+module.exports = (dirname, project) => {
   const pkgPath = path.join(dirname, 'package.json');
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const pkg = require(pkgPath);
@@ -40,7 +40,10 @@ module.exports = (dirname) => {
         return external.includes(namespace);
       },
       plugins: [
-        command(compileTypings(dirname), { exitOnFail: true, wait: true }),
+        command(compileTypings(project || dirname), {
+          exitOnFail: true,
+          wait: true,
+        }),
         resolve({ extensions }),
         commonjs(),
         babel({

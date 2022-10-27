@@ -19,6 +19,11 @@ Install this package as a dev dependency in your package, then create scripts in
 
 NOTICE: this package doesn't clean your build directories in each run, so you'd probably want to append something like `rimraf` to your dependencies.
 
+#### Parameters
+
+- `-w` to watch the files.
+- `-p` to define a different `tsconfig.ts` file. p.eg: `package-build -p tsconfig.build.json`.
+
 ### Publish a new version
 
 - Update [CHANGELOG](./CHANGELOG.md) with new features, breaking changes, etc

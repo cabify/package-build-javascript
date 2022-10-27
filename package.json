@@ -1,6 +1,6 @@
 {
   "name": "@cabify/package-build",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Common configuration & scripts for building TS packages with rollup",
   "license": "Apache-2.0",
   "main": "build.js",
@@ -17,7 +17,6 @@
     "format:check": "prettier --check .",
     "typecheck": "echo 'No typecheck to perform'",
     "test:ci": "echo 'No test to perform'",
-
     "publish:major": "npm version major",
     "publish:minor": "npm version minor",
     "publish:patch": "npm version patch",
