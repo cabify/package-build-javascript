@@ -65,6 +65,8 @@ module.exports = (dirname, project) => {
         file: pkg.main,
         format: 'cjs',
         sourcemap: true,
+        // See: https://rollupjs.org/configuration-options/#output-interop
+        interop: 'auto',
       },
       {
         file: pkg.module,
