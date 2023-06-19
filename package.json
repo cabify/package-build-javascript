@@ -56,8 +56,8 @@
     "typescript": ">= 3.7"
   },
   "volta": {
-    "node": "16.13.0",
-    "yarn": "1.22.17"
+    "node": "18.16.0",
+    "yarn": "1.22.19"
   },
   "publishConfig": {
     "access": "public"
