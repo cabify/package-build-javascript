@@ -1,7 +1,5 @@
 {
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -10,81 +8,63 @@
       "name": "Alejandro",
       "avatar_url": "https://avatars.githubusercontent.com/u/9197247?v=4",
       "profile": "https://github.com/alejandrofdiaz",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "alexgallardo",
       "name": "Alejandro Gallardo Escobar",
       "avatar_url": "https://avatars.githubusercontent.com/u/7766614?v=4",
       "profile": "https://github.com/alexgallardo",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "cicloon",
       "name": "Alejandro León",
       "avatar_url": "https://avatars.githubusercontent.com/u/818328?v=4",
       "profile": "https://github.com/cicloon",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "AlexTemina",
       "name": "Alex Temina",
       "avatar_url": "https://avatars.githubusercontent.com/u/14157093?v=4",
       "profile": "https://github.com/AlexTemina",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "ArianZargaran",
       "name": "Arian Zargaran",
       "avatar_url": "https://avatars.githubusercontent.com/u/29388744?v=4",
       "profile": "http://www.ari.soy/",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "Crismmgg",
       "name": "Crismmgg",
       "avatar_url": "https://avatars.githubusercontent.com/u/56558107?v=4",
       "profile": "https://github.com/Crismmgg",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "inspiratweb",
       "name": "Francisco Sánchez",
       "avatar_url": "https://avatars.githubusercontent.com/u/6814061?v=4",
       "profile": "https://github.com/inspiratweb",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "jalopez",
       "name": "Javier López",
       "avatar_url": "https://avatars.githubusercontent.com/u/259623?v=4",
       "profile": "https://github.com/jalopez",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "valenber",
       "name": "Valentin Berlin",
       "avatar_url": "https://avatars.githubusercontent.com/u/7880641?v=4",
       "profile": "https://valya.codes/",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     }
   ],
   "contributorsPerLine": 7,
