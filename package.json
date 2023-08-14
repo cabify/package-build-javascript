@@ -45,7 +45,7 @@
   "devDependencies": {
     "@cabify/babel-preset": "0.1.2",
     "@cabify/eslint-config": "2.0.1",
-    "eslint": "8.46.0",
+    "eslint": "8.47.0",
     "prettier": "3.0.1"
   },
   "peerDependencies": {
