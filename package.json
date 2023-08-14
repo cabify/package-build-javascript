@@ -11,8 +11,8 @@
   "scripts": {
     "build": "echo 'No build script required.'",
     "test": "npm run lint:check && npm run format:check",
-    "lint": "eslint . --fix",
-    "lint:check": "eslint .",
+    "lint": "eslint . --fix --ext .js",
+    "lint:check": "eslint . --ext .js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "echo 'No typecheck to perform'",
@@ -43,13 +43,10 @@
     "rollup-pluginutils": "^2.8.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.22.9",
     "@cabify/babel-preset": "0.1.2",
     "@cabify/eslint-config": "2.0.1",
     "eslint": "8.46.0",
-    "eslint-import-resolver-typescript": "3.5.5",
-    "prettier": "3.0.1",
-    "typescript": "5.1.6"
+    "prettier": "3.0.1"
   },
   "peerDependencies": {
     "typescript": ">= 3.7"
