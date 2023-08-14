@@ -10,3 +10,9 @@ updates:
     schedule:
       interval: 'weekly'
     versioning-strategy: increase
+    groups:
+      rollup:
+        patterns:
+          - 'rollup'
+          - 'rollup-plugin-*'
+          - '@rollup/plugin-*'
