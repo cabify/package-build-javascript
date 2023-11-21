@@ -2989,15 +2989,15 @@ node-releases@^2.0.13:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
 
-node-typescript-compiler@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/node-typescript-compiler/-/node-typescript-compiler-3.0.0.tgz#f6ed772eb3f1b890fb7896348d63ab5a2e8d6e7d"
-  integrity sha512-b3sE88wRNdVW2bNa51ASzh97sAf/P/p1ArTybW/rBWL7QBKv9y4amv5EodKXUe2sL9bDatNqZIkD66AlwksfjA==
+node-typescript-compiler@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/node-typescript-compiler/-/node-typescript-compiler-4.0.0.tgz#ec198eb8b040a2e502fd3b687e068e01a24dc934"
+  integrity sha512-ISLPeczCYVhGq+7iKAY9SR+nNgR3VpYzPXZ17SoqfwWDG9P+0eti7NRBdnZ70XhH+yUKTy7GaRBPtVixQBahMA==
   dependencies:
     cross-spawn "^7"
     lodash "^4"
-    path-exists "^4"
-    tildify "^2"
+    path-exists "^5"
+    tildify "^3"
 
 npm-run-path@^4.0.1:
   version "4.0.1"
@@ -3147,10 +3147,15 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
-path-exists@^4, path-exists@^4.0.0:
+path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
   integrity sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==
+
+path-exists@^5:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-5.0.0.tgz#a6aad9489200b21fab31e49cf09277e5116fb9e7"
+  integrity sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -3537,10 +3542,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-tildify@^2:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tildify/-/tildify-2.0.0.tgz#f205f3674d677ce698b7067a99e949ce03b4754a"
-  integrity sha512-Cc+OraorugtXNfs50hU9KS369rFXCfgGLpfCfvlc+Ud5u6VWmUQsOAa9HbTvheQdYnrdJqqv1e5oIqXppMYnSw==
+tildify@^3:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tildify/-/tildify-3.0.0.tgz#f938edb127cfe9a9d84871b37dc0c1e5447c3069"
+  integrity sha512-9ZLMl75qnTLr7oSEmWJbKemFS/fP4TMBiF6PFwGwLpgobebU1ehXoGbadJ+7jT8fjaz2G82JgN9G4taz+o1j1w==
 
 titleize@^3.0.0:
   version "3.0.0"
