@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.2] - 2022-06-05
+## [0.1.2] - 2023-06-26
 
 ### Fixed
 
 - CJS-ESM interoperability.
 
-## [0.1.1] - 2022-10-27
+## [0.1.1] - 2023-02-06
 
 ### Fixed
 
