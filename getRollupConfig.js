@@ -1,19 +1,11 @@
 const commonjs = require('@rollup/plugin-commonjs');
 const { nodeResolve: resolve } = require('@rollup/plugin-node-resolve');
-const command = require('rollup-plugin-command');
 const { babel } = require('@rollup/plugin-babel');
 const image = require('@rollup/plugin-image');
+const typescript = require('@rollup/plugin-typescript');
 const ignoreImport = require('rollup-plugin-ignore-import');
 const path = require('path');
-const tsc = require('node-typescript-compiler');
 const json = require('@rollup/plugin-json');
-
-const compileTypings = (cwd) => () => {
-  return tsc.compile({
-    project: cwd,
-    emitDeclarationOnly: true,
-  });
-};
 
 module.exports = (dirname, project) => {
   const pkgPath = path.join(dirname, 'package.json');
@@ -40,11 +32,15 @@ module.exports = (dirname, project) => {
         return external.includes(namespace);
       },
       plugins: [
-        command(compileTypings(project || dirname), {
-          exitOnFail: true,
-          wait: true,
-        }),
         resolve({ extensions }),
+        typescript({
+          tsconfig: project || dirname,
+          noForceEmit: true,
+          compilerOptions: {
+            emitDeclarationOnly: true,
+            noEmitOnError: true,
+          },
+        }),
         commonjs(),
         babel({
           extensions,
