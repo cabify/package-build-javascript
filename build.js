@@ -33,10 +33,16 @@ const watch = (config) => {
   watcher.on('event', (event) => eventHandler(event));
 };
 
-const build = async (withWatch = false, project) => {
+const build = async (withWatch = false, project, options = {}) => {
   const dirname = process.cwd();
+  const { preserveModules = false } = options;
+
   console.log(`Bundling ${dirname}`);
-  const { input, output } = getRollupConfig(dirname, project);
+  if (preserveModules) {
+    console.log('Using preserveModules mode for tree-shaking optimization');
+  }
+
+  const { input, output } = getRollupConfig(dirname, project, options);
 
   if (withWatch) {
     watch({ ...input, output });
@@ -45,7 +51,8 @@ const build = async (withWatch = false, project) => {
       const bundle = await rollup.rollup(input);
       await Promise.all(
         output.map(async (outputItem) => {
-          console.log(`Bundling ${outputItem.format} into ${outputItem.file}`);
+          const target = outputItem.dir || outputItem.file;
+          console.log(`Bundling ${outputItem.format} into ${target}`);
           return bundle.write(outputItem);
         }),
       );
@@ -60,4 +67,8 @@ const build = async (withWatch = false, project) => {
 
 const argv = minimist(process.argv.slice(2));
 
-build(argv.w, argv.p);
+const options = {
+  preserveModules: argv.m || argv['preserve-modules'] || false,
+};
+
+build(argv.w, argv.p, options);
