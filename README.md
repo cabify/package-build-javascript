@@ -23,6 +23,36 @@ NOTICE: this package doesn't clean your build directories in each run, so you'd 
 
 - `-w` to watch the files.
 - `-p` to define a different `tsconfig.ts` file. p.eg: `package-build -p tsconfig.build.json`.
+- `-m` or `--preserve-modules` to enable tree-shaking optimization (see below).
+
+#### Tree Shaking Optimization
+
+For libraries with many exports (like icon libraries), use the `--preserve-modules` flag to generate individual files instead of a single bundle:
+
+```bash
+package-build --preserve-modules
+package-build -m
+```
+
+This enables effective tree-shaking for consumers using modern bundlers. When enabled:
+
+- Output files are generated in `dist/` (CJS) and `es2015/` (ESM) directories
+- The source directory structure is preserved
+- Each module becomes a separate file instead of being bundled into one
+
+**Recommended package.json configuration for tree-shakable libraries:**
+
+```json
+{
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./es2015/index.js",
+      "require": "./dist/index.js"
+    }
+  }
+}
+```
 
 ### Publish a new version
 

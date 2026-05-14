@@ -15,7 +15,8 @@ const compileTypings = (cwd) => () => {
   });
 };
 
-module.exports = (dirname, project) => {
+module.exports = (dirname, project, options = {}) => {
+  const { preserveModules = false } = options;
   const pkgPath = path.join(dirname, 'package.json');
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const pkg = require(pkgPath);
@@ -26,6 +27,31 @@ module.exports = (dirname, project) => {
   ];
 
   const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+
+  const getOutputConfig = (format) => {
+    const baseConfig = {
+      sourcemap: true,
+      interop: 'auto',
+    };
+
+    if (preserveModules) {
+      return {
+        ...baseConfig,
+        dir: format === 'cjs' ? 'dist' : 'es2015',
+        format,
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+        entryFileNames: '[name].js',
+      };
+    }
+
+    // Legacy mode: single bundle file
+    return {
+      ...baseConfig,
+      file: format === 'cjs' ? pkg.main : pkg.module,
+      format,
+    };
+  };
 
   return {
     input: {
@@ -60,19 +86,6 @@ module.exports = (dirname, project) => {
         }),
       ],
     },
-    output: [
-      {
-        file: pkg.main,
-        format: 'cjs',
-        sourcemap: true,
-        // See: https://rollupjs.org/configuration-options/#output-interop
-        interop: 'auto',
-      },
-      {
-        file: pkg.module,
-        format: 'esm',
-        sourcemap: true,
-      },
-    ],
+    output: [getOutputConfig('cjs'), getOutputConfig('esm')],
   };
 };

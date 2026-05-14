@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-12-15
+
+### Added
+
+- New `--preserve-modules` (or `-m`) flag to enable tree-shaking optimization. When enabled, Rollup generates individual files preserving the source directory structure instead of a single monolithic bundle. This allows consumers using modern bundlers to effectively tree-shake unused exports, significantly reducing bundle sizes for libraries with many exports (e.g., icon libraries).
+
 ## [0.1.2] - 2022-06-05
 
 ### Fixed
