@@ -50,7 +50,7 @@
     "@cabify/babel-preset": "0.1.2",
     "@cabify/eslint-config": "2.1.4",
     "eslint": "8.57.1",
-    "prettier": "3.8.1"
+    "prettier": "3.8.3"
   },
   "peerDependencies": {
     "typescript": ">= 3.7"
